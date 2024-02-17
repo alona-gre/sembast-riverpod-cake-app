@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riv_semb_cake_app/global_providers.dart';
-import 'package:riv_semb_cake_app/pages/home_page.dart';
+// import 'package:riv_semb_cake_app/pages/home_page.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:riv_semb_cake_app/pages/jokes_screen.dart';
 import 'package:sembast/sembast_io.dart';
 import 'package:path/path.dart';
 
@@ -30,7 +31,9 @@ class CakeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: JokesScreen(),
+
+      // HomePage(),
     );
   }
 }
